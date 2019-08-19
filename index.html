@@ -3,17 +3,34 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>小葫芦数据</title>
+		<title>来疯数据</title>
 		<style type="text/css">
 			*{
 				margin: 0;
 				padding: 0;
 			}
+			body{
+				height: 100%;
+			}
+			html{
+				height: 100%;
+			}
 			.dataBox{
 				text-align: center;
+				position: relative;
+				height: 100%;
+				padding: 50px 0;
+				box-sizing: border-box;
 			}
 			.dataBox h1{
-				margin:50px 0;
+				margin-bottom: 50px;
+			}
+			.dataBox p{
+				position: absolute;
+				bottom: 10%;
+				text-align: center;
+				width: 100%;
+				opacity: 0.5;
 			}
 		</style>
 	</head>
@@ -22,6 +39,7 @@
 			<h1>来疯数据</h1>
 			<input placeholder="请输入来疯号" id="u_id" />
 			<button onclick="toXHL()">跳转小葫芦查询</button>
+			<p>网页由·1990·整理，数据来自小葫芦</p>
 		</div>
 		
 		<script type="text/javascript">
