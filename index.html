@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>小葫芦数据</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.dataBox{
+				text-align: center;
+			}
+			.dataBox h1{
+				margin:50px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dataBox">
+			<h1>来疯数据</h1>
+			<input placeholder="请输入来疯号" id="u_id" />
+			<button onclick="toXHL()">跳转小葫芦查询</button>
+		</div>
+		
+		<script type="text/javascript">
+			function toXHL(){
+				var u_id=document.getElementById('u_id').value;
+				var str1="https://xiaohulu.com/spectator2/details.html?plat=28&fromid=";
+				var str2=u_id;
+				str=str1+str2;
+				// console.log(str);
+				window.open(str,"_blank");
+			}
+			
+		</script>
+	</body>
+</html>
